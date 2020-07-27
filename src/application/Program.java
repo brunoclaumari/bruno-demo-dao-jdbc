@@ -2,6 +2,8 @@ package application;
 
 import java.util.Date;
 
+import enums.dao.EnumTipoDao;
+import model.dao.DaoFactory;
 import model.entities.Department;
 import model.entities.Seller;
 
@@ -11,6 +13,8 @@ public class Program {
 		Department obj = new Department(1, "Books");
 
 		Seller seller = new Seller(21, "Bob", "bob@gmail.com", new Date(), 3000.0, obj);
+
+		var sellerDao = DaoFactory.createDaoJDBC(EnumTipoDao.SELLER_DAO);
 
 		System.out.println(seller);
 

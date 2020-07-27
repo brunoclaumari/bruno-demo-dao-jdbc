@@ -1,19 +1,20 @@
-package model.dao;
+package model.dao.impl;
 
 import java.util.List;
 
-import model.entities.Seller;
+import model.dao.IPatternDao;
+import model.entities.Department;
 
-public class SellerDaoJdbc implements IPatternDao<Seller> {
+public class DepartmentDaoJDBC implements IPatternDao<Department> {
 
 	@Override
-	public void insert(Seller entity) {
+	public void insert(Department entity) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void update(Seller entity) {
+	public void update(Department entity) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -25,13 +26,13 @@ public class SellerDaoJdbc implements IPatternDao<Seller> {
 	}
 
 	@Override
-	public Seller findById(Integer id) {
+	public Department findById(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Seller> findById() {
+	public List<Department> findById() {
 		// TODO Auto-generated method stub
 		return null;
 	}
